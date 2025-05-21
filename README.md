@@ -93,6 +93,18 @@ Kotlin provides several ways to create and use objects without traditional class
 
 Example: [Objects.kt](src/main/kotlin/za/co/ee/objects/Objects.kt)
 
+### Coroutines
+
+Coroutines are Kotlin's solution for asynchronous programming, allowing for more readable and maintainable code:
+
+- **Suspend Functions**: Functions that can be paused and resumed later
+- **Coroutine Scope**: Defines the lifecycle of coroutines
+- **Dispatchers**: Control which thread the coroutine runs on
+- **Structured Concurrency**: Parent-child relationship between coroutines
+- **Non-blocking Code**: Write sequential code that doesn't block the main thread
+
+Example: [Coroutines.kt](src/main/kotlin/za/co/ee/coroutine/Coroutines.kt)
+
 ## Learning Path
 
 For beginners to Kotlin, we recommend exploring the examples in this order:
@@ -105,5 +117,6 @@ For beginners to Kotlin, we recommend exploring the examples in this order:
 6. Scope Functions
 7. Lambda Expressions
 8. Objects
+9. Coroutines
 
 Each example file contains comments explaining the concepts and how they work.
