@@ -72,6 +72,16 @@ Execute blocks of code in the context of an object:
 
 Example: [ScopeFunctions.kt](src/main/kotlin/za/co/ee/scopefunctions/ScopeFunctions.kt)
 
+### Lambda Expressions
+
+Lambda expressions are anonymous functions that can be passed as arguments or stored in variables:
+
+- **Lambda as a Variable**: Define and store functions in variables
+- **Lambda as a Function Argument**: Pass functions as parameters to other functions
+- **Trailing Lambda Syntax**: When a lambda is the last parameter, it can be placed outside the parentheses
+
+Example: [Lambda.kt](src/main/kotlin/za/co/ee/lambda/Lambda.kt)
+
 ## Learning Path
 
 For beginners to Kotlin, we recommend exploring the examples in this order:
@@ -82,5 +92,6 @@ For beginners to Kotlin, we recommend exploring the examples in this order:
 4. Data Classes
 5. Extension Functions
 6. Scope Functions
+7. Lambda Expressions
 
 Each example file contains comments explaining the concepts and how they work.
