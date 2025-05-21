@@ -82,6 +82,17 @@ Lambda expressions are anonymous functions that can be passed as arguments or st
 
 Example: [Lambda.kt](src/main/kotlin/za/co/ee/lambda/Lambda.kt)
 
+### Objects
+
+Kotlin provides several ways to create and use objects without traditional class instantiation:
+
+- **Singleton Objects**: Create single-instance objects using the `object` keyword
+- **Companion Objects**: Add static-like functionality to classes
+- **Object Expressions**: Create anonymous objects on the fly
+- **Interface Implementation**: Anonymous objects can implement interfaces
+
+Example: [Objects.kt](src/main/kotlin/za/co/ee/objects/Objects.kt)
+
 ## Learning Path
 
 For beginners to Kotlin, we recommend exploring the examples in this order:
@@ -93,5 +104,6 @@ For beginners to Kotlin, we recommend exploring the examples in this order:
 5. Extension Functions
 6. Scope Functions
 7. Lambda Expressions
+8. Objects
 
 Each example file contains comments explaining the concepts and how they work.
