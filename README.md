@@ -1,0 +1,86 @@
+# Kotlin Demo Project
+
+This project contains examples of various Kotlin language features and concepts. It's designed to help you learn Kotlin through practical examples.
+
+## Concepts Covered
+
+### Constructors
+
+Kotlin provides a concise way to define constructors and initialize properties:
+
+- **Primary Constructors**: Defined in the class header
+- **Init Blocks**: For initialization logic
+- **Secondary Constructors**: Must call the primary constructor
+- **Default Parameter Values**: Simplify constructor overloading
+- **Property Initialization**: Using constructor parameters
+
+Example: [Contructors.kt](src/main/kotlin/za/co/ee/constructors/Contructors.kt)
+
+### Getters and Setters
+
+Kotlin automatically generates getters and setters for properties, but you can customize them:
+
+- **Custom Getters**: Modify how property values are retrieved
+- **Custom Setters**: Modify how property values are set
+- **Backing Field**: Access the field value using the `field` identifier
+
+Example: [GetterSetter.kt](src/main/kotlin/za/co/ee/getset/GetterSetter.kt)
+
+### Data Classes
+
+Data classes are designed to hold data with minimal boilerplate:
+
+- **Automatic Generation**: equals(), hashCode(), toString(), copy(), and componentN() functions
+- **Immutable vs Mutable**: Using `val` vs `var` properties
+- **Copy Function**: Create modified copies of immutable objects
+- **Destructuring Declarations**: Extract properties into variables
+
+Example: [DataClasses.kt](src/main/kotlin/za/co/ee/dataclasses/DataClasses.kt)
+
+### Extension Functions
+
+Extend existing classes without inheritance:
+
+- **Custom Extensions**: Add functionality to any class
+- **Nullable Receivers**: Extensions that can be called on null values
+- **Built-in Extensions**: Kotlin's standard library includes many useful extensions
+
+Examples: 
+- [Extentions.kt](src/main/kotlin/za/co/ee/ext/Extentions.kt)
+- [MainExt.kt](src/main/kotlin/za/co/ee/ext/MainExt.kt)
+
+### Null Safety
+
+Kotlin's type system helps prevent null pointer exceptions:
+
+- **Nullable Types**: Marked with `?` suffix
+- **Safe Call Operator**: `?.` to safely access properties and methods
+- **Elvis Operator**: `?:` to provide default values
+- **Non-null Assertion**: `!!` to assert a value is not null (use with caution)
+
+Example: [NullableTypeOperator.kt](src/main/kotlin/za/co/ee/nulltypeop/NullableTypeOperator.kt)
+
+### Scope Functions
+
+Execute blocks of code in the context of an object:
+
+- **let**: Uses `it` as context object, returns lambda result
+- **apply**: Uses `this` as context object, returns the object itself
+- **run**: Uses `this` as context object, returns lambda result
+- **with**: Non-extension function that takes an object as parameter
+- **also**: Uses `it` as context object, returns the object itself
+
+Example: [ScopeFunctions.kt](src/main/kotlin/za/co/ee/scopefunctions/ScopeFunctions.kt)
+
+## Learning Path
+
+For beginners to Kotlin, we recommend exploring the examples in this order:
+
+1. Constructors and Properties
+2. Getters and Setters
+3. Null Safety
+4. Data Classes
+5. Extension Functions
+6. Scope Functions
+
+Each example file contains comments explaining the concepts and how they work.
