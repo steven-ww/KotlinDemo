@@ -1,6 +1,7 @@
 package za.co.ee.constructors
 
-class Contructors(val name: String, surname: String, var age: Int = 20) {
+// The val's, vars and params defined here define the default/primary constructor
+class Constructors(val name: String, surname: String, var age: Int = 20) {
 
     // Use the init block to initialize the class members
     // This is equivalent to the constructor in Java
@@ -22,7 +23,7 @@ class Contructors(val name: String, surname: String, var age: Int = 20) {
     // ------------ Secondary Constructors ----- //
 
     // Define a secondary constructor
-    // Must invoke the primary constructor first // Inlike java, primary initialization logic must always run
+    // Must invoke the primary constructor first // Unlike java, primary initialization logic must always run
     constructor(secondary: String) : this("From Secondary", "Constructor") {
         println("1st Secondary constructor called")
         println(">> secondary parameter is: $secondary")
