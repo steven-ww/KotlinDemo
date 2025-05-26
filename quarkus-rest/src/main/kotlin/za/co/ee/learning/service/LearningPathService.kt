@@ -13,7 +13,7 @@ import za.co.ee.learning.model.KotlinLearningPath
 class LearningPathService {
 
     @RestClient
-    lateinit var urlValidationClient: UrlValidatorClient
+    private lateinit var urlValidationClient: UrlValidatorClient
 
     private val defaultLearningPath = KotlinLearningPath(
         name = "Kotlin Learning Resources",

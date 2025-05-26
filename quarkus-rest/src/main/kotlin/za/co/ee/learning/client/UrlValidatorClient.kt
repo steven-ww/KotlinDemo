@@ -1,7 +1,7 @@
-package za.co.ee.learning.client;
+package za.co.ee.learning.client
 
-import jakarta.ws.rs.*;
-import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.*
+import jakarta.ws.rs.core.MediaType
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient
 
 

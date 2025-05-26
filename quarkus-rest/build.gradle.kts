@@ -17,11 +17,12 @@ val quarkusPlatformVersion: String by project
 
 dependencies {
     implementation(enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}"))
-    implementation("io.quarkus:quarkus-rest-client")
+    // Rest Support
     implementation("io.quarkus:quarkus-rest-jackson")
+    // Rest Client Support
     implementation("io.quarkus:quarkus-rest-client-jackson")
+
     implementation("io.quarkiverse.wiremock:quarkus-wiremock:1.4.1")
-    implementation("io.quarkus:quarkus-rest")
     implementation("io.quarkus:quarkus-arc")
     implementation("io.quarkus:quarkus-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
@@ -29,10 +30,7 @@ dependencies {
     // Test dependencies
     testImplementation("io.quarkus:quarkus-junit5")
     testImplementation("io.rest-assured:rest-assured")
-    testImplementation("org.hamcrest:hamcrest")
-    testImplementation("io.mockk:mockk:1.13.5")
     testImplementation("io.quarkiverse.mockk:quarkus-junit5-mockk:2.1.0")
-    testImplementation("io.quarkus:quarkus-junit5-mockito")
 }
 
 group = "za.co.ee.learning"
