@@ -6,7 +6,6 @@ import io.restassured.http.ContentType
 import org.hamcrest.CoreMatchers.`is`
 import org.hamcrest.CoreMatchers.containsString
 import org.junit.jupiter.api.Test
-import za.co.ee.learning.model.KotlinLearningPath
 
 @QuarkusTest
 class LearningPathResourceTest {
