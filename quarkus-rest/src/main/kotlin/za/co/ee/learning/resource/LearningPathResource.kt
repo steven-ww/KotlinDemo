@@ -6,6 +6,7 @@ import jakarta.ws.rs.*
 import jakarta.ws.rs.core.MediaType
 import jakarta.ws.rs.core.Response
 import za.co.ee.learning.model.KotlinLearningPath
+import za.co.ee.learning.service.InvalidLearningResourceUrl
 import za.co.ee.learning.service.LearningPathService
 
 /**
@@ -62,7 +63,7 @@ class LearningPathResource {
 
         return try {
             Response.ok(learningPathService.addOrUpdateResource(name, url)).build()
-        } catch (e: IllegalArgumentException) {
+        } catch (e: InvalidLearningResourceUrl) {
             Response.status(Response.Status.BAD_REQUEST)
                 .entity(e.message)
                 .build()
