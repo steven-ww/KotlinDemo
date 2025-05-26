@@ -1,0 +1,24 @@
+{
+  "mappings": [
+    {
+      "name": "POST URL with Server Error",
+      "request": {
+        "urlPattern": "/validate-url",
+        "method": "POST",
+        "bodyPatterns" : [ {
+          "equalToJson" : "{\"name\":\"New Resource Name\", \"url\": \"http://server.error.resource\"}",
+          "ignoreArrayOrder" : true,
+          "ignoreExtraElements" : true
+        } ]
+      },
+      "response": {
+        "status": 500,
+        "body": "Internal Server Error",
+        "headers": {
+          "Content-Type": "text/plain",
+          "Connection": "keep-alive"
+        }
+      }
+    }
+  ]
+}
