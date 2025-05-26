@@ -14,7 +14,7 @@ Kotlin provides a concise way to define constructors and initialize properties:
 - **Default Parameter Values**: Simplify constructor overloading
 - **Property Initialization**: Using constructor parameters
 
-Example: [Contructors.kt](src/main/kotlin/za/co/ee/constructors/Contructors.kt)
+Example: [Constructors.kt](src/main/kotlin/za/co/ee/constructors/Constructors.kt)
 
 ### Getters and Setters
 
@@ -120,3 +120,14 @@ For beginners to Kotlin, we recommend exploring the examples in this order:
 9. Coroutines
 
 Each example file contains comments explaining the concepts and how they work.
+
+## Quarkus REST Submodule
+
+This project includes a submodule that demonstrates how to build a REST API using Kotlin and Quarkus:
+
+- **Kotlin with Quarkus**: Build a modern, reactive REST API with Kotlin and Quarkus
+- **REST Controller**: Define REST endpoints using JAX-RS annotations
+- **Dependency Injection**: Use CDI for service and component management
+- **Testing**: Unit tests, integration tests, and WireMock for external service stubbing
+
+The submodule provides a REST API for managing Kotlin learning resources. See the [quarkus-rest README](quarkus-rest/README.md) for more details.
